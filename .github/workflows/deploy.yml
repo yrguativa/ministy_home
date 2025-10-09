@@ -8,6 +8,10 @@
     jobs:
       build:
         runs-on: ubuntu-latest
+        permissions: # <-- Agrega este bloque
+          pages: write # Permiso para escribir en GitHub Pages
+          id-token: write # Permiso para generar el token OIDC
+          contents: read # Permiso para leer el repositorio (necesario para el checkout)
         steps:
           - name: Checkout your repository
             uses: actions/checkout@v4
