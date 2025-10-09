@@ -1,0 +1,20 @@
+    name: Deploy Astro site to GitHub Pages
+
+    on:
+      push:
+        branches:
+          - main # Reemplaza 'main' con el nombre de tu rama principal
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout your repository
+            uses: actions/checkout@v4
+
+          - name: Install, build, and upload your site
+            uses: withastro/action@v2
+            with:
+            #   token: ${{ secrets.GITHUB_TOKEN }}
+              config: |
+                site: "https://yrguativa.github.io/ministy_home"
