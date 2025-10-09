@@ -18,3 +18,6 @@
             #   token: ${{ secrets.GITHUB_TOKEN }}
               config: |
                 site: "https://yrguativa.github.io/ministy_home"
+
+          - name: Deploy to GitHub Pages
+                  uses: actions/deploy-pages@v4
