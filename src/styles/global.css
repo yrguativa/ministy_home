@@ -1,3 +1,16 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
 
 @plugin "@midudev/tailwind-animations";
+
+@theme {
+    --color-primary: #1e40af;
+    --color-secondary: #9333ea;
+    --color-accent: #f59e0b;
+    --color-background: #f3f4f6;
+}
+
+.font-playwrite-deutschaland {
+    font-family: "Playwrite DE SAS", cursive;
+    font-optical-sizing: auto;
+}   
